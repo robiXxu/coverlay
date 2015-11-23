@@ -1,0 +1,9 @@
+D:\[Workspace]\C#\TESTS\coverlay\coverlay\bin\Release\coverlay.exe.config
+D:\[Workspace]\C#\TESTS\coverlay\coverlay\bin\Release\coverlay.exe
+D:\[Workspace]\C#\TESTS\coverlay\coverlay\bin\Release\coverlay.pdb
+D:\[Workspace]\C#\TESTS\coverlay\coverlay\obj\Release\coverlay.coverlayform.resources
+D:\[Workspace]\C#\TESTS\coverlay\coverlay\obj\Release\coverlay.changeCrosshair.resources
+D:\[Workspace]\C#\TESTS\coverlay\coverlay\obj\Release\coverlay.Properties.Resources.resources
+D:\[Workspace]\C#\TESTS\coverlay\coverlay\obj\Release\coverlay.csproj.GenerateResource.Cache
+D:\[Workspace]\C#\TESTS\coverlay\coverlay\obj\Release\coverlay.exe
+D:\[Workspace]\C#\TESTS\coverlay\coverlay\obj\Release\coverlay.pdb
