@@ -13,7 +13,7 @@ namespace coverlay {
         static void Main () {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new coverlayform());
+            Application.Run(new Crosshair());
         }
     }
 }
