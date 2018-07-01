@@ -2,17 +2,20 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="coverlay.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
-    <Setting Name="customCrosshair" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="opacity" Type="System.Double" Scope="User">
+    <Setting Name="opacity" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">100</Value>
     </Setting>
     <Setting Name="crosshair" Type="System.String" Scope="User">
-      <Value Profile="(Default)">c3black</Value>
+      <Value Profile="(Default)">__default</Value>
     </Setting>
-    <Setting Name="yindex" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">-10</Value>
+    <Setting Name="zIndex" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="xIndex" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="backcolor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Black</Value>
     </Setting>
   </Settings>
 </SettingsFile>

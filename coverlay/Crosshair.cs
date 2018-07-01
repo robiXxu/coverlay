@@ -1,41 +1,31 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Drawing.Imaging;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace coverlay {
     public partial class Crosshair : Form {
-        public Crosshair() {
+        private coverlayTray parent = null;
+        
+        public Crosshair(coverlayTray _parent) {
             InitializeComponent();
+            this.parent = _parent;
             Color transparentColor = Color.Black;
             this.TransparencyKey = transparentColor;
             this.BackColor = transparentColor;
         }
 
         private void Crosshair_Load( object sender, EventArgs e ) {
-            try {
-                this.Top = this.Top - Properties.Settings.Default.yindex;
-
-            } catch (Exception) { }
-
-            try {
-                this.Opacity = Properties.Settings.Default.opacity;
-            }catch{}
-            if (Properties.Settings.Default.customCrosshair != "") {
-                try {
-                    this.crosshairBox.Image = new Bitmap(Properties.Settings.Default.customCrosshair);
-                } catch (Exception) { }
-            } else {
-                this.crosshairBox.Image = (Image)Properties.Resources.ResourceManager.GetObject(Properties.Settings.Default.crosshair);
-
-            }
+            this.Top -= 19; //this.Top - Convert.ToInt32(Properties.Settings.Default.zIndex);
+            this.Left -= 52; //this.Left - Convert.ToInt32(Properties.Settings.Default.xIndex);
+            this.crosshairBox.Image = (Image)Properties.Resources.ResourceManager.GetObject(Properties.Settings.Default.crosshair);
         }
+        
+        public void Crosshair_Refresh () {
+            this.Top = this.Top - Convert.ToInt32(Properties.Settings.Default.zIndex);
+            this.Left = this.Left - Convert.ToInt32(Properties.Settings.Default.xIndex);
+            this.crosshairBox.Image = (Image)Properties.Resources.ResourceManager.GetObject(Properties.Settings.Default.crosshair);
+        }
+
         protected override CreateParams CreateParams {
             get {
                 CreateParams cp = base.CreateParams;

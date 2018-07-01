@@ -53,6 +53,9 @@
     <StartupObject>coverlay.coverlayTray</StartupObject>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -71,7 +74,12 @@
     <Compile Include="Crosshair.Designer.cs">
       <DependentUpon>Crosshair.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="CrosshairMirror.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrosshairMirror.Designer.cs">
+      <DependentUpon>CrosshairMirror.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings.cs">
       <SubType>Form</SubType>
@@ -84,6 +92,9 @@
     </Compile>
     <EmbeddedResource Include="Crosshair.resx">
       <DependentUpon>Crosshair.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrosshairMirror.resx">
+      <DependentUpon>CrosshairMirror.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -98,6 +109,10 @@
     <EmbeddedResource Include="coverlayTray.resx">
       <DependentUpon>coverlayTray.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>PublicSettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -182,6 +197,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="newlogo.ico" />
+    <None Include="Resources\left.png" />
+    <None Include="Resources\down.png" />
+    <None Include="Resources\up.png" />
+    <None Include="Resources\right.png" />
+    <None Include="Resources\__default.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">

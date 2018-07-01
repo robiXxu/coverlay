@@ -2,10 +2,14 @@ D:\Workspace\repo\coverlay\coverlay\bin\Debug\coverlay.exe.config
 C:\root\coverlay\coverlay\bin\Debug\coverlay.exe.config
 C:\root\coverlay\coverlay\bin\Debug\coverlay.exe
 C:\root\coverlay\coverlay\bin\Debug\coverlay.pdb
+C:\root\coverlay\coverlay\bin\Debug\MaterialSkin.dll
+C:\root\coverlay\coverlay\obj\Debug\coverlay.Crosshair.resources
 C:\root\coverlay\coverlay\obj\Debug\coverlay.Properties.Resources.resources
+C:\root\coverlay\coverlay\obj\Debug\coverlay.coverlayTray.resources
+C:\root\coverlay\coverlay\obj\Debug\coverlay.Settings.resources
 C:\root\coverlay\coverlay\obj\Debug\coverlay.csproj.GenerateResource.cache
 C:\root\coverlay\coverlay\obj\Debug\coverlay.csproj.CoreCompileInputs.cache
+C:\root\coverlay\coverlay\obj\Debug\coverlay.csproj.CopyComplete
 C:\root\coverlay\coverlay\obj\Debug\coverlay.exe
 C:\root\coverlay\coverlay\obj\Debug\coverlay.pdb
-C:\root\coverlay\coverlay\obj\Debug\coverlay.coverlayTray.resources
-C:\root\coverlay\coverlay\obj\Debug\coverlay.Crosshair.resources
+C:\root\coverlay\coverlay\obj\Debug\coverlay.CrosshairMirror.resources

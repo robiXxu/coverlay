@@ -30,26 +30,27 @@
             // 
             // crosshairBox
             // 
+            this.crosshairBox.BackColor = System.Drawing.Color.Transparent;
             this.crosshairBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crosshairBox.Location = new System.Drawing.Point(0, 0);
-            this.crosshairBox.Name = "crosshair";
+            this.crosshairBox.Name = "crosshairBox";
             this.crosshairBox.Size = new System.Drawing.Size(32, 32);
+            this.crosshairBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.crosshairBox.TabIndex = 0;
             this.crosshairBox.TabStop = false;
             // 
-            // CrosshairForm
+            // Crosshair
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(32, 32);
             this.ControlBox = false;
             this.Controls.Add(this.crosshairBox);
+            this.ForeColor = System.Drawing.Color.Transparent;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Crosshair";
-            this.Opacity = 0.4D;
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Crosshair Overlay - by robiXxu";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.Crosshair_Load);
             ((System.ComponentModel.ISupportInitialize)(this.crosshairBox)).EndInit();

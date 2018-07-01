@@ -16,14 +16,16 @@ namespace coverlay {
         private NotifyIcon trayIcon;
         private ContextMenu trayMenu;
         private Settings settingsForm = null;
-        private Crosshair crosshairForm = null;
+        private CrosshairMirror mirrorForm = null;
+        public Crosshair crosshairForm = null;
         private Boolean crosshairVisible = true;
 
         public coverlayTray() {
             this.trayMenu = new ContextMenu();
 
             this.trayMenu.MenuItems.Add((this.crosshairVisible ? "Hide" : "Show"), toggleCrosshair);
-            this.trayMenu.MenuItems.Add("Settings", onSettings);
+            this.trayMenu.MenuItems.Add("Open Mirror", onMirror);
+            //this.trayMenu.MenuItems.Add("Settings", onSettings);
             this.trayMenu.MenuItems.Add("Exit", onExit);
             
             this.trayIcon = new NotifyIcon();
@@ -43,9 +45,16 @@ namespace coverlay {
             base.OnLoad(e);
         }
 
+        private void onMirror(object sender, EventArgs e) {
+            if (this.mirrorForm == null || this.mirrorForm.IsDisposed || this.mirrorForm.Disposing) {
+                this.mirrorForm = new CrosshairMirror(this);
+            }
+            this.mirrorForm.Show();
+        }
+
         private void toggleCrosshairForm() {
             if (this.crosshairForm == null || this.crosshairForm.IsDisposed || this.crosshairForm.Disposing) {
-                this.crosshairForm = new Crosshair();
+                this.crosshairForm = new Crosshair(this);
             }
             this.crosshairForm.Show();
             this.crosshairForm.Visible = this.crosshairVisible;
@@ -58,9 +67,8 @@ namespace coverlay {
         }
 
         private void onSettings(object sender, EventArgs e) {
-            // Have only one instance of the Settings at the time. :) 
             if (this.settingsForm == null || this.settingsForm.IsDisposed || this.settingsForm.Disposing) {
-                this.settingsForm = new Settings();
+                this.settingsForm = new Settings(this);
             }
             this.settingsForm.Show();
         }
