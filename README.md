@@ -4,7 +4,7 @@ Crosshair Overlay - works with any game in WindowMode / Borderless Fullscreen
 
 ![Image](https://i.imgur.com/tsRtvkd.png)
 
-[![Demo](https://j.gifs.com/6RlOqO.gif)](https://youtu.be/MaFwxPMzp4A)
+[![Demo](https://j.gifs.com/Oyj3xr.gif)](https://youtu.be/MaFwxPMzp4A)
 
 
 Crosshair Mirror - clones the area around crosshair and outputs it in a zoomed frame. (good for sniping at long ranges) - can be accessed from tray Icon
